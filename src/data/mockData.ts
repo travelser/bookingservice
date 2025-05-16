@@ -144,7 +144,7 @@ export const destinations: DestinationType[] = [
     id: 2,
     name: "Paris",
     country: "France",
-    image: "https://images.pexels.com/photos/699466/pexels-photo-699466.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "https://images.pexels.com/photos/338515/pexels-photo-338515.jpeg?auto=compress&cs=tinysrgb&w=800",
     properties: 5942
   },
   {
@@ -165,7 +165,7 @@ export const destinations: DestinationType[] = [
     id: 5,
     name: "Cancún",
     country: "Mexico",
-    image: "https://images.pexels.com/photos/3601425/pexels-photo-3601425.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=800",
     properties: 2876
   },
   {

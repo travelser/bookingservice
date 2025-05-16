@@ -3,6 +3,59 @@ import { HotelType, DestinationType, TestimonialType } from '../types';
 export const hotels: HotelType[] = [
   {
     id: 1,
+    name: "Grand Mayan Riviera Maya",
+    location: "Cancún, Mexico",
+    description: "Lujoso resort todo incluido con playa privada y parque acuático.",
+    image: "https://images.pexels.com/photos/3601425/pexels-photo-3601425.jpeg?auto=compress&cs=tinysrgb&w=800",
+    price: 299,
+    currency: "USD",
+    rating: 9.4,
+    reviewCount: 2156,
+    amenities: ["Free WiFi", "Spa", "Pool", "Restaurant", "Beach Access", "Water Park"],
+    discount: 20,
+    specialOffer: "Todo incluido"
+  },
+  {
+    id: 2,
+    name: "Hotel Boutique Condesa",
+    location: "Ciudad de México, Mexico",
+    description: "Elegante hotel boutique en el corazón de la Condesa con diseño contemporáneo.",
+    image: "https://images.pexels.com/photos/2901209/pexels-photo-2901209.jpeg?auto=compress&cs=tinysrgb&w=800",
+    price: 189,
+    currency: "USD",
+    rating: 9.1,
+    reviewCount: 1432,
+    amenities: ["Free WiFi", "Restaurant", "Bar", "Rooftop Pool", "Gym"],
+    specialOffer: "Desayuno incluido"
+  },
+  {
+    id: 3,
+    name: "Villa del Palmar Puerto Vallarta",
+    location: "Puerto Vallarta, Mexico",
+    description: "Resort frente al mar con vistas panorámicas a la Bahía de Banderas.",
+    image: "https://images.pexels.com/photos/3601422/pexels-photo-3601422.jpeg?auto=compress&cs=tinysrgb&w=800",
+    price: 249,
+    currency: "USD",
+    rating: 9.3,
+    reviewCount: 1876,
+    amenities: ["Free WiFi", "Spa", "Pool", "Restaurant", "Beach Access", "Kids Club"],
+    discount: 15
+  },
+  {
+    id: 4,
+    name: "Azulik Tulum",
+    location: "Tulum, Mexico",
+    description: "Eco-luxury resort con vistas al mar Caribe y diseño único.",
+    image: "https://images.pexels.com/photos/3601423/pexels-photo-3601423.jpeg?auto=compress&cs=tinysrgb&w=800",
+    price: 399,
+    currency: "USD",
+    rating: 9.6,
+    reviewCount: 932,
+    amenities: ["Free WiFi", "Spa", "Private Pool", "Restaurant", "Beach Access", "Yoga Deck"],
+    specialOffer: "Masaje de bienvenida"
+  },
+  {
+    id: 5,
     name: "Grand Plaza Hotel",
     location: "Barcelona, Spain",
     description: "Stunning 5-star hotel with amazing sea views and excellent amenities.",
@@ -16,7 +69,7 @@ export const hotels: HotelType[] = [
     specialOffer: "Free breakfast included"
   },
   {
-    id: 2,
+    id: 6,
     name: "Urban Boutique Hotel",
     location: "Amsterdam, Netherlands",
     description: "Chic design hotel in the heart of Amsterdam's cultural district.",
@@ -28,7 +81,7 @@ export const hotels: HotelType[] = [
     amenities: ["Free WiFi", "Restaurant", "Bar", "Bike Rental"],
   },
   {
-    id: 3,
+    id: 7,
     name: "Mountain View Resort",
     location: "Interlaken, Switzerland",
     description: "Luxurious alpine resort with breathtaking mountain views.",
@@ -41,7 +94,7 @@ export const hotels: HotelType[] = [
     specialOffer: "Ski pass included"
   },
   {
-    id: 4,
+    id: 8,
     name: "Seaside Resort & Spa",
     location: "Santorini, Greece",
     description: "Elegant beachfront resort with private pools and sunset views.",
@@ -54,7 +107,7 @@ export const hotels: HotelType[] = [
     discount: 10
   },
   {
-    id: 5,
+    id: 9,
     name: "City Lights Hotel",
     location: "Paris, France",
     description: "Modern hotel with Eiffel Tower views in the heart of Paris.",
@@ -66,7 +119,7 @@ export const hotels: HotelType[] = [
     amenities: ["Free WiFi", "Restaurant", "Bar", "Room Service"]
   },
   {
-    id: 6,
+    id: 10,
     name: "Historic Palace Hotel",
     location: "Rome, Italy",
     description: "Elegant hotel in a restored historic building near major attractions.",

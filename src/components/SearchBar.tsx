@@ -30,7 +30,7 @@ const SearchBar: React.FC = () => {
           <Search className="text-gray-400 mr-2" size={20} />
           <input 
             type="text" 
-            placeholder="Where are you going?" 
+            placeholder="¿A dónde vas?" 
             className="outline-none w-full text-gray-800" 
           />
         </div>
@@ -45,7 +45,8 @@ const SearchBar: React.FC = () => {
               startDate={startDate}
               endDate={endDate}
               className="outline-none text-gray-800 w-28"
-              dateFormat="MMM d, yyyy"
+              dateFormat="d MMM, yyyy"
+              placeholderText="Llegada"
             />
             <span className="text-gray-400">—</span>
             <DatePicker
@@ -56,7 +57,8 @@ const SearchBar: React.FC = () => {
               endDate={endDate}
               minDate={startDate}
               className="outline-none text-gray-800 w-28"
-              dateFormat="MMM d, yyyy"
+              dateFormat="d MMM, yyyy"
+              placeholderText="Salida"
             />
           </div>
         </div>
@@ -68,7 +70,7 @@ const SearchBar: React.FC = () => {
             className="bg-white flex items-center p-2 rounded-md border-2 border-transparent hover:border-blue-400 transition-colors w-full md:w-auto"
           >
             <Users className="text-gray-400 mr-2" size={20} />
-            <span className="text-gray-800">{adults} adults · {rooms} room{rooms > 1 ? 's' : ''}</span>
+            <span className="text-gray-800">{adults} adultos · {rooms} habitación{rooms > 1 ? 'es' : ''}</span>
             {showGuestSelector ? (
               <ChevronUp className="ml-2 text-gray-400" size={20} />
             ) : (
@@ -79,7 +81,7 @@ const SearchBar: React.FC = () => {
           {showGuestSelector && (
             <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-md shadow-lg p-4 z-50">
               <div className="flex items-center justify-between mb-4">
-                <span className="text-gray-800">Adults</span>
+                <span className="text-gray-800">Adultos</span>
                 <div className="flex items-center gap-3">
                   <button
                     type="button"
@@ -100,9 +102,8 @@ const SearchBar: React.FC = () => {
                   </button>
                 </div>
               </div>
-              
-              <div className="flex items-center justify-between mb-4">
-                <span className="text-gray-800">Rooms</span>
+              <div className="flex items-center justify-between">
+                <span className="text-gray-800">Habitaciones</span>
                 <div className="flex items-center gap-3">
                   <button
                     type="button"
@@ -123,23 +124,15 @@ const SearchBar: React.FC = () => {
                   </button>
                 </div>
               </div>
-
-              <button
-                type="button"
-                onClick={() => setShowGuestSelector(false)}
-                className="w-full bg-[#0071c2] text-white font-medium py-2 rounded hover:bg-blue-700 transition-colors"
-              >
-                Done
-              </button>
             </div>
           )}
         </div>
         
         <button 
-          type="submit"
-          className="bg-[#0071c2] text-white font-medium py-3 px-6 rounded-md hover:bg-blue-700 transition-colors"
+          type="submit" 
+          className="bg-[#0071c2] text-white font-medium py-2 px-6 rounded hover:bg-blue-700 transition-colors"
         >
-          Search
+          Buscar
         </button>
       </div>
     </form>

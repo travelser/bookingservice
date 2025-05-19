@@ -13,7 +13,7 @@ const HotelList: React.FC = () => {
         
         <div className="md:w-3/4">
           <div className="mb-6">
-            <h2 className="text-2xl font-bold mb-2">Barcelona: 256 properties found</h2>
+            <h2 className="text-2xl font-bold mb-2">256 properties found</h2>
             <div className="flex items-center text-sm">
               <button className="bg-[#0071c2] text-white px-3 py-1 rounded-full mr-2">
                 Our Top Picks

@@ -10,7 +10,7 @@ const Header: React.FC = () => {
           {/* Logo */}
           <div className="flex items-center">
             <Bed className="mr-2" size={28} />
-            <span className="text-2xl font-bold">Booking.clone</span>
+            <span className="text-2xl font-bold">Booking mx</span>
           </div>
           
           {/* Desktop navigation */}
@@ -21,7 +21,7 @@ const Header: React.FC = () => {
             </div>
             <div className="flex items-center text-sm">
               <Phone size={16} className="mr-1" />
-              <span>800-123-4567</span>
+              <span>555 067 7546</span>
             </div>
             <button className="border border-white px-3 py-1 rounded hover:bg-white hover:text-[#003580] transition-colors">
               Anuncia tu propiedad

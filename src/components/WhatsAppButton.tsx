@@ -8,7 +8,7 @@ const WhatsAppButton: React.FC = () => {
   return (
     <div className="fixed bottom-6 right-6 flex flex-col items-center">
       <span className="bg-white text-gray-700 px-3 py-1 rounded-full shadow-md mb-2 text-sm whitespace-nowrap">
-        Pedir informes
+        Solicitar asistencia 
       </span>
       <a
         href={whatsappUrl}

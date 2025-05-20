@@ -12,10 +12,13 @@ const Header: React.FC = () => {
             <Bed className="mr-2" size={28} />
             <span className="text-2xl font-bold">Booking mx</span>
           </div>
-          <div className="flex items-center text-sm">
+          <a 
+            href="tel:5550677546" 
+            className="flex items-center text-sm hover:text-gray-200 transition-colors"
+          >
             <Phone size={16} className="mr-1" />
             <span>555 067 7546</span>
-          </div>
+          </a>
         </div>
         
         {/* Navigation tabs */}

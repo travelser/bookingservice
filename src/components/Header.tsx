@@ -1,5 +1,5 @@
 import React from 'react';
-import { Bed, Menu, User, Moon, Sun, Phone } from 'lucide-react';
+import { Bed, Phone } from 'lucide-react';
 import SearchBar from './SearchBar';
 
 const Header: React.FC = () => {
@@ -7,31 +7,15 @@ const Header: React.FC = () => {
     <header className="bg-[#003580] text-white">
       <div className="container mx-auto px-4 py-3">
         <div className="flex justify-between items-center">
-          {/* Logo */}
+          {/* Logo and Phone */}
           <div className="flex items-center">
             <Bed className="mr-2" size={28} />
             <span className="text-2xl font-bold">Booking mx</span>
           </div>
-          
-          {/* Desktop navigation */}
-          <div className="hidden md:flex items-center space-x-6">
-            <div className="flex items-center">
-              <Moon size={18} className="mr-1" />
-              <Sun size={18} />
-            </div>
-            <div className="flex items-center text-sm">
-              <Phone size={16} className="mr-1" />
-              <span>555 067 7546</span>
-            </div>
-            <button className="border border-white px-3 py-1 rounded hover:bg-white hover:text-[#003580] transition-colors">
-              Anuncia tu propiedad
-            </button>
+          <div className="flex items-center text-sm">
+            <Phone size={16} className="mr-1" />
+            <span>555 067 7546</span>
           </div>
-          
-          {/* Mobile menu button */}
-          <button className="md:hidden">
-            <Menu size={24} />
-          </button>
         </div>
         
         {/* Navigation tabs */}

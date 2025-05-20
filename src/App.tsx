@@ -5,6 +5,7 @@ import DestinationsSection from './components/DestinationsSection';
 import TestimonialsSection from './components/TestimonialsSection';
 import NewsletterSection from './components/NewsletterSection';
 import Footer from './components/Footer';
+import WhatsAppButton from './components/WhatsAppButton';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <NewsletterSection />
       </main>
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 }
